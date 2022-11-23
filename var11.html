@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+        if(10==10)
+        {
+            x=100;//global variable
+        var x1=1000;//global variable
+        let x2=100000;//local variable
+        const x3=1000000;
+            document.write("inside the function scope "+x+"<br>")
+            document.write("inside the function scope "+x1+"<br>")
+            document.write("inside the function scope "+x2+"<br>")
+            document.write("inside the function scope "+x3+"<br>")
+        }
+        display()//function call
+        document.write("outside the function scope "+x+"<br>")//100
+        document.write("outside the function scope "+x1+"<br>")//1000
+        document.write("outside the function scope "+x2+"<br>")//error x2 is not defined
+        document.write("outside the function scope "+x3+"<br>")//error x3 is not defined
+    </script>
+</body>
+</html>

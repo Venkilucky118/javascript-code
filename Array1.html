@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var food=new Array("kori rotti","puttu","uruval","kori  sukka")
+       document.write(food) 
+      //===================================
+      for(let i=0;i<food.length;i++){
+        console.log(food[i])
+      }
+       //======================
+       food.forEach((n,i,food) =>console.log(n,i,food) )//function call
+       //=============
+       food.map((n,i,food) =>console.log(n,i,food) )//function call
+      //================
+      for (const k in food) {
+        console.log(food[k])
+        }
+      //====================
+      for (const ir of food) {
+        console.log(i)
+      }
+       
+    </script>
+</body>
+</html>

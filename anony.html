@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    var x=()=>document.write("hi")
+    x()//function call
+    //========================
+    var x=_=>document.write("hi")
+    x()//function call
+    //========================
+    var x=(name)=>document.write("student name is"+name+"<br>")
+    x("riya")//function call
+    x("priya")
+    //========================
+    var x=name=>document.write("student name is"+name+"<br>")
+    x("divya")//function call
+    x("priya")
+    //========================
+    var x=subject=>{return subject}
+    document.write(x("react js"))//function call
+    //========================
+    var x=subject=> subject
+    document.write(x("react js"))//function call
+    //========================
+   </script> 
+</body>
+</html>

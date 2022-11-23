@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div{
+            border: 10px black solid;
+            padding: 10px;
+            background-color: red;
+            text-align: center;
+        }
+        #output{
+            border: 5px black dotted;
+            font-style: italic;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div id="div">
+        <label for="">user name</label>
+        <input type="text" id="input">
+        <br>
+        <br>
+        <label for="">phone number</label>
+        <input type="text" id="phone">
+        <br>
+        <br>
+        <button onclick="genotp()">send OTP</button>
+        <br>
+        <br>
+        <div id="output">
+            Dear customer your OTP is:
+        </div>
+    </div>
+    <script>
+        //var x=Math.random()
+        //console.log(x)
+        //Math.random()*(HN-LN)+LN
+        //var result=Math.random()*(9999-1000)1000
+        //console.log(result)
+        //var otp=Math.floor(result)
+        //console.log(otp)
+        function genotp()
+        {
+            var x=Math.random()*(9999-1000)+1000
+            var otp=Math.floor(x)
+            console.log(otp)
+            var name=document.getElementById("input").value
+            document.getElementById("output").innerHTML="Dear "+name+" your OTP: "+otp
+        }
+    </script>
+</body>
+</html>
